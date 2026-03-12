@@ -1,0 +1,21 @@
+/* YouTube'un engelleyici uyarı pencerelerini zorla kapat */
+ytd-enforcement-message-view-model,
+tp-yt-paper-dialog,
+.yt-spec-touch-feedback-shape {
+    display: none !important;
+}
+
+/* Ekranın kararmasını (backdrop) engelle */
+tp-yt-iron-overlay-backdrop {
+    display: none !important;
+}
+
+/* Reklam oynarken video içeriğini gösterme (saniyelik parlama olmasın) */
+.ad-showing video, .ad-interrupting video {
+    opacity: 0 !important;
+}
+
+/* Sayfanın kitlenmesini (scroll engeli) kaldır */
+body {
+    overflow: auto !important;
+}

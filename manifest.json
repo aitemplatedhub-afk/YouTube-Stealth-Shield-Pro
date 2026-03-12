@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Stealth Shield Pro",
+  "version": "3.3",
+  "description": "Görünmez reklam atlatma teknolojisi ile kesintisiz YouTube deneyimi.",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "css": ["style.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
